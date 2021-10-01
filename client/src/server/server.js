@@ -7,8 +7,6 @@ const cors = require('cors');
 const app = express()
 //for env set
 require('dotenv').config()
-//from models
-const Todo = require('./models/todo')
 
 //pass json in the request
 app.use(cors())
@@ -16,8 +14,14 @@ app.use(express.json())
 
 //routes config
 const todos = require('./routes/todos');
+const signUp = require('./routes/signUp');
+const signIn = require('./routes/signIn');
 
 app.use("/api/todos",todos)
+app.use("/api/signup",signUp)
+app.use("/api/signin",signIn)
+
+
 
 app.get("/",(req,res)=>{
     res.send("Welcome to MERN stack training")

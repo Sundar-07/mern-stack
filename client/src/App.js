@@ -1,18 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Login from './components/Login';
-import Register from './components/Register';
-import Profile from './components/Profile';
+import SignIn from './components/auth/SignIn';
+import SignUp from './components/auth/SignUp';
+import NavBar from './components/NavBar/NavBar';
+import Todos from './components/todos/Todos';
 
 
 
 function App() {
   return (
     <Router>
+      <NavBar/>
       <Switch>
-        <Route component={Register} exact path='/register'/>
-        <Route component={Login} exact path='/login'/>
-        <Route component={Profile} exact path='/profile'/>
+        <Route component={SignIn} exact path='/signin'/>
+        <Route component={SignUp} exact path='/Signup'/>
+        <Route component={Todos} exact path='/todos'/>
       </Switch>
     </Router>
   );
