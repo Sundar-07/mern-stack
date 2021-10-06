@@ -1,5 +1,4 @@
 import React from 'react';
-import 'tailwindcss/'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
