@@ -71,7 +71,7 @@ const NavBar = () => {
       </div>
     </div>
 
-    <h2 class="text-lg ...">Logged in as Sundar</h2>
+    <p className="text-center text-2xl">Logged in as Sundar</p>
     
     </>
   );
