@@ -1,5 +1,6 @@
 import React,{ Fragment } from "react";
 import { useHistory } from 'react-router-dom';
+import Todos from '../todos/Todos';
 
 
 
@@ -72,6 +73,8 @@ const NavBar = () => {
     </div>
 
     <p className="text-center text-2xl">Logged in as Sundar</p>
+    <br></br>
+    <Todos/>
     
     </>
   );
